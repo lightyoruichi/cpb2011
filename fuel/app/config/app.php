@@ -13,10 +13,10 @@
 
 return array(
 	// Application identity is a unique string to be used in cookie and etc.
-	'identity'              => 'fuelapp',
+	'identity'              => 'cpb2011',
 	
 	// Application name
-	'site_name'             => 'FuelPHP Application',
+	'site_name'             => 'Computing Professional Bill 2011',
 	
 	// Set application into maintenance mode if value is set to true (default is false).
 	'maintenance_mode'      => false,

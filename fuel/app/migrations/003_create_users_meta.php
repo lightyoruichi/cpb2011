@@ -7,11 +7,13 @@ class Create_users_meta
 	public function up()
 	{
 		\DBUtil::create_table('users_meta', array(
-			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true),
-			'user_id' => array('constraint' => 11, 'type' => 'int'),
-			'created_at' => array('constraint' => 11, 'type' => 'int'),
-			'updated_at' => array('constraint' => 11, 'type' => 'int'),
-		), array('id'));
+			'id'         => array('constraint' => 30, 'type' => 'bigint', 'auto_increment' => true),
+			'user_id'    => array('constraint' => 30, 'type' => 'bigint'),
+			'created_at' => array('type' => 'datetime'),
+			'updated_at' => array('type' => 'datetime'),
+		), array('id'), false, 'InnoDB');
+
+		\DBUtil::create_index('users_meta', array('user_id'), 'user_id_UNIQUE', 'UNIQUE');
 	}
 
 	public function down()
