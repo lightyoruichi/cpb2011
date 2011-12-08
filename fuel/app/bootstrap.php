@@ -4,6 +4,8 @@
 require COREPATH.'classes'.DIRECTORY_SEPARATOR.'autoloader.php';
 class_alias('Fuel\\Core\\Autoloader', 'Autoloader');
 
+require APPPATH.'base.php';
+
 // Bootstrap the framework DO NOT edit this
 require COREPATH.'bootstrap.php';
 

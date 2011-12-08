@@ -23,19 +23,11 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
-	}
-
-	/**
-	 * A typical "Hello, Bob!" type example.  This uses a ViewModel to
-	 * show how to use them.
-	 * 
-	 * @access  public
-	 * @return  Response
-	 */
-	public function action_hello()
-	{
-		return Response::forge(ViewModel::forge('welcome/hello'));
+		$data = array();
+		return $this->response(array(
+			'title'   => '',
+			'content' => $this->template->partial('welcome/index', $data),
+		), 200);
 	}
 
 	/**
@@ -46,6 +38,13 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_404()
 	{
-		return Response::forge(ViewModel::forge('welcome/404'), 404);
+		$messages = array('Aw, crap!', 'Bloody Hell!', 'Uh Oh!', 'Nope, not here.', 'Huh?');
+		$data = array(
+			'title' => $messages[array_rand($messages)]
+		);
+
+		return $this->response(array(
+			'content' => $this->template->partial('welcome/404', $data),
+		), 404);
 	}
 }

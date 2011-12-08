@@ -96,14 +96,14 @@ return array(
 	 * false    Use time()
 	 * true     Use datetime
 	 */
-	'mysql_timestamp' => null,
+	'mysql_timestamp' => true,
 
 	/**
 	 * link_multiple_providers
 	 * 
 	 * Can multiple providers be attached to one user account
 	 */
-	'link_multiple_providers' => true,
+	'link_multiple_providers' => false,
 
 	/**
 	 * salt
@@ -117,7 +117,7 @@ return array(
 	 *
 	 * Set hashing method (md5, sha1, crypt_hash)
 	 */
-	'hash_type' => 'sha1',
+	'hash_type' => 'crypt_hash',
 
 	/**
 	 * expiration
