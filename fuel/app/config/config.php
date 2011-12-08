@@ -41,7 +41,7 @@ return array(
 	 *
 	 * Set this to false or remove if you using mod_rewrite.
 	 */
-	'index_file'  => 'index.php',
+	'index_file'  => '',
 
 	'profiling'  => false,
 
@@ -82,7 +82,7 @@ return array(
 	 * default_timezone		optional, if you want to change the server's default timezone
 	 */
 	'server_gmt_offset'  => 0,
-	'default_timezone'   => 'UTC',
+	'default_timezone'   => 'Asia/Kuala_Lumpur',
 
 	/**
 	 * Logging Threshold.  Can be set to any of the following:
@@ -185,7 +185,10 @@ return array(
 		 * );
 		 */
 		'packages'  => array(
-			//'orm',
+			'hybrid',
+			'oauth',
+			'oauth2',
+			'orm',
 		),
 
 		/**
