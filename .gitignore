@@ -6,9 +6,6 @@ fuel/app/config/production/*.php
 fuel/app/config/test/db.php
 fuel/app/config/crypt.php
 fuel/app/config/migrations.php
-public/assets/img/avatar/*
-public/assets/img/portfolio/*
 .project
 .DS_Store
 *.tmproj
-public/*.tmproj
