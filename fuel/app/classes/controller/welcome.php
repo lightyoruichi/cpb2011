@@ -1,5 +1,7 @@
 <?php
 
+use Hybrid\Controller;
+
 /**
  * The Welcome Controller.
  *
@@ -12,6 +14,7 @@
 class Controller_Welcome extends Controller
 {
 
+	public $template = 'frontend';
 	/**
 	 * The basic welcome message
 	 * 

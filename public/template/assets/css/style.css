@@ -1,0 +1,163 @@
+/*
+Project's name:
+Description:
+Version:
+Author:
+Last date modified:
+
+Using MentariCSS Framework
+Get it from http://www.mentaricss.com
+Licensed under GPL
+*/
+
+/* Import external stylesheet */
+@import url('mentari.css');
+
+/* Common HTML tags */
+body
+{
+	font:80%/150% arial,sans-serif,verdana;
+	background:#f5f5f5;
+	color:#444;
+	padding:40px;
+}
+
+/* Wrapping */
+#wrapper
+{
+	background:#fff;
+	width:800px;
+	margin:0 auto;
+	border:1px solid #e5e5e5;
+	box-shadow:0 0 15px #e5e5e5;
+	-webkit-box-shadow:0 0 15px #e5e5e5;
+	-moz-box-shadow:0 0 15px #e5e5e5;
+	-o-box-shadow:0 0 15px #e5e5e5;
+}
+
+/* Header section */
+#header
+{
+	background:#333;
+	opacity:0.9;
+	padding:0 20px;
+	text-shadow: 0 -1px 1px #000;
+}
+
+#header h1
+{
+	font-size:1.2em;
+	color:#fff;
+	margin-top:12px;
+}
+
+#menu ul li
+{
+	display:inline;
+	margin-left:10px;
+}
+
+#menu a
+{
+	color:#ccc;
+	text-decoration:none;
+	border-bottom:1px dotted #666;
+}
+
+#menu a:hover
+{
+	color:#fff;
+	border-bottom:1px dotted #ccc;
+}
+
+/* Content section */
+#content
+{
+	padding:0 20px 15px 20px;
+}
+
+#content a, #footer a
+{
+	color:#477da3;
+	text-decoration:none;
+	border-bottom:1px dotted #ccc;
+}
+
+#content a:hover, #footer a:hover
+{
+	color:#333;
+	border-bottom:1px dotted #666;
+}
+
+.item
+{
+	border-bottom:1px solid #eee;
+	padding:10px 0 15px 0;
+}
+
+.item h2
+{
+	font-size:1.2em;
+	padding:10px 20px;
+	margin-left:-20px;
+	display:block;
+	width:760px;
+}
+
+.item h2:hover
+{
+	background:#f5f5f5;
+}
+
+.item h2 strong
+{
+	visibility:hidden;
+	font-weight:normal;
+	font-size:0.8em;
+	margin-top:1px;
+	float:right;
+}
+
+.item h2:hover strong
+{
+	visibility:visible;
+}
+
+.item ul, .item ol
+{
+	margin:20px 0;
+}
+
+.item ul li
+{
+	list-style:circle;
+	margin-bottom:10px;
+}
+
+.item ol li
+{
+	list-style:decimal;
+	margin-bottom:10px;
+}
+
+.item img
+{
+	margin-bottom:5px;
+}
+
+.item p
+{
+	margin-bottom:19px;
+}
+
+.scroll
+{
+	overflow:scroll;
+}
+
+/* Footer section */
+#footer
+{
+	padding:10px 15px;
+	margin-top:-15px;
+}
